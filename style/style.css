@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  background-color: rgb(142, 202, 230);
+  padding: 0.6rem;
+  height: 3rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: rgb(2, 48, 71);
+  transition-property: font-size;
+  transition-duration: 1s;
+}
+
+.nav-item:hover {
+  font-size: larger;
+  color: rgb(251, 133, 0);
+}
+
+#hero {
+  background-image: url("../img/coffee-banner-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 25rem;
+  overflow: hidden;
+}
+
+.box {
+  height: 50rem;
+  padding: 3rem;
+}
+.box .par {
+  text-indent: 2rem;
+}
+.box .link {
+  text-decoration: none;
+  color: rgb(251, 133, 0);
+}
+.box .link:hover {
+  text-decoration: underline;
+  color: rgb(251, 133, 0);
+}
+.box .headline {
+  text-align: center;
+  margin: 3rem;
+}
+.box .button {
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+  border: 2px solid rgb(33, 158, 188);
+}
+.box .cont {
+  margin: auto;
+  height: 40rem;
+}
+.box .cont #col1 {
+  background-image: url("https://www.baristainstitute.com/sites/default/files/styles/1x_width_100_wysiwyg/public/images/cowboy%20coffee%201.JPG?itok=YJv2uDlN");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.box .cont .divText {
+  position: relative;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+.box .cont .text {
+  padding: 0.4rem;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.box .cont .row2 {
+  width: 100%;
+  height: 50%;
+}
+.box .cont .row2 #col2 {
+  margin: 5px;
+  background-image: url("https://www.baristainstitute.com/sites/default/files/styles/1x_width_100_wysiwyg/public/images/diy%20coffee%20bag.JPG?itok=wXdktspL");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.box .cont .row2 #col3 {
+  margin: 5px;
+  background-image: url("https://www.baristainstitute.com/sites/default/files/styles/1x_width_100_wysiwyg/public/images/coffee%20strainer%202.JPG?itok=xSfdWRm3");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
