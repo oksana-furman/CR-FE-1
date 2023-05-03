@@ -5,21 +5,21 @@
 }
 
 .nav {
-  background-color: black;
+  background-color: rgb(142, 202, 230);
   padding: 0.6rem;
   height: 3rem;
 }
 
 .nav-item {
   text-decoration: none;
-  color: white;
+  color: rgb(2, 48, 71);
   transition-property: font-size;
   transition-duration: 1s;
 }
 
 .nav-item:hover {
   font-size: larger;
-  color: rgb(129, 82, 63);
+  color: rgb(251, 133, 0);
 }
 
 #hero {
@@ -31,14 +31,11 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   height: 25rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .box {
   padding: 3rem;
-}
-.box .item {
-  margin: auto;
 }
 .box .par {
   text-indent: 2rem;
@@ -56,11 +53,8 @@
   margin: 3rem;
 }
 .box .button {
-  height: 5rem;
-  min-width: 7rem;
   margin: 1rem;
   padding: 0.5rem;
-  background-color: white;
   border-radius: 3px;
   border: 2px solid rgb(33, 158, 188);
 }
@@ -69,31 +63,14 @@
   height: 40rem;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   margin: auto;
   gap: 20px;
   padding: 10px;
 }
 .box .grid .gridItem {
-  overflow-y: hidden;
+  border: 2px solid red;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.box .grid .gridItem .gridBtn {
-  visibility: hidden;
-  margin: 1rem;
-  padding: 0.5rem;
-  background-color: rgba(249, 249, 249, 0.5);
-  border-radius: 3px;
-}
-.box .grid .gridItem:hover {
-  transform: scale(1.05);
-  transition: width 1s, height 1s, transform 1s;
-}
-.box .grid .gridItem:hover > .gridBtn {
-  visibility: visible;
 }
 .box .grid .bg-image {
   background-size: cover;
@@ -106,26 +83,13 @@
 }
 .box .grid .i2 {
   grid-area: 1/5/4/9;
-  background-image: url("../img/iced-coffee-6.jpg");
+  background-image: url("../img/iced-coffee-4.jpg");
 }
 .box .grid .i3 {
   grid-area: 4/5/7/9;
   background-image: url("../img/iced-coffee-5.jpg");
 }
 .box .grid .i4 {
-  grid-area: 7/1/11/9;
-  background-image: url("../img/freakshake.jpg");
-}
-
-footer {
-  background-color: black;
-  color: white;
-  padding: 2rem;
-}
-
-@media screen and (max-width: 576px) {
-  .box {
-    display: -webkit-flex;
-    flex-direction: column;
-  }
+  grid-area: 7/1/9/9;
+  background-image: url("../img/iced-coffee-6.jpg");
 }/*# sourceMappingURL=style.css.map */
