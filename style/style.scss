@@ -23,12 +23,12 @@ $orange: rgb(251, 133, 0);
     font-size: larger;
     color: $orange;
 }
-// body{
-
-//     background-image: url('../img/coffee-beans-bg.jpg');
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
+body{
+    overflow-y: hidden;
+    // background-image: url('../img/coffee-beans-bg.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+}
 #hero{
     background-image: url('../img/coffee-banner-2.jpg');
     background-size: cover;
@@ -69,53 +69,41 @@ padding: 3rem;
     border: 2px solid $bright_blue;
 
 }
-.cont{
-    margin: auto;
-    height: 40rem;
-    // width: 100%;
-    #col1{
-        background-image: url('https://www.baristainstitute.com/sites/default/files/styles/1x_width_100_wysiwyg/public/images/cowboy%20coffee%201.JPG?itok=YJv2uDlN');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        overflow: hidden;
-    }
-    .divText{
-        position: relative;
-       top: 0.5rem;
-       left: 0.5rem;
-       
-    }
-    .text{
-        padding: 0.4rem;
-        border: none;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.4);
-        width: fit-content;
-    }
-    .row2{
-        width: 100%;
-        height: 50%;
-       #col2{
-        margin: 5px;
-        background-image: url('https://www.baristainstitute.com/sites/default/files/styles/1x_width_100_wysiwyg/public/images/diy%20coffee%20bag.JPG?itok=wXdktspL');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        overflow: hidden;
-        
-    }
-    #col3{
-        margin: 5px;
-        background-image: url('https://www.baristainstitute.com/sites/default/files/styles/1x_width_100_wysiwyg/public/images/coffee%20strainer%202.JPG?itok=xSfdWRm3');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-        // height: 50%;
-    } 
-    }
-    
-}
 
+    .grid{
+        width: 100%;
+        height: 40rem;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        margin: auto;
+        gap: 20px;
+        padding: 10px;
+        .gridItem{
+            // margin: auto;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+        .bg-image{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .i1{
+            grid-area: 1 / 1 / 7 / 5;
+            background-image: url('../img/v-iced-coffee-1.jpg');
+        }
+        .i2{
+            grid-area: 1 / 5 / 4 / 9;
+            background-image: url('../img/iced-coffee-4.jpg');
+        }
+        .i3{
+            grid-area: 4 / 5 / 7 / 9;
+            background-image: url('../img/iced-coffee-5.jpg');
+        }
+        .i4{
+            grid-area: 7 / 1 / 9 / 9;
+            background-image: url('../img/iced-coffee-6.jpg');
+        }
+    } 
 }

@@ -22,6 +22,10 @@
   color: rgb(251, 133, 0);
 }
 
+body {
+  overflow-y: hidden;
+}
+
 #hero {
   background-image: url("../img/coffee-banner-2.jpg");
   background-size: cover;
@@ -59,47 +63,38 @@
   border-radius: 3px;
   border: 2px solid rgb(33, 158, 188);
 }
-.box .cont {
-  margin: auto;
-  height: 40rem;
-}
-.box .cont #col1 {
-  background-image: url("https://www.baristainstitute.com/sites/default/files/styles/1x_width_100_wysiwyg/public/images/cowboy%20coffee%201.JPG?itok=YJv2uDlN");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-.box .cont .divText {
-  position: relative;
-  top: 0.5rem;
-  left: 0.5rem;
-}
-.box .cont .text {
-  padding: 0.4rem;
-  border: none;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.4);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.box .cont .row2 {
+.box .grid {
   width: 100%;
-  height: 50%;
+  height: 40rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  margin: auto;
+  gap: 20px;
+  padding: 10px;
 }
-.box .cont .row2 #col2 {
-  margin: 5px;
-  background-image: url("https://www.baristainstitute.com/sites/default/files/styles/1x_width_100_wysiwyg/public/images/diy%20coffee%20bag.JPG?itok=wXdktspL");
-  background-position: center;
+.box .grid .gridItem {
+  border: 2px solid red;
+  border-radius: 10px;
+}
+.box .grid .bg-image {
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
-}
-.box .cont .row2 #col3 {
-  margin: 5px;
-  background-image: url("https://www.baristainstitute.com/sites/default/files/styles/1x_width_100_wysiwyg/public/images/coffee%20strainer%202.JPG?itok=xSfdWRm3");
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+}
+.box .grid .i1 {
+  grid-area: 1/1/7/5;
+  background-image: url("../img/v-iced-coffee-1.jpg");
+}
+.box .grid .i2 {
+  grid-area: 1/5/4/9;
+  background-image: url("../img/iced-coffee-4.jpg");
+}
+.box .grid .i3 {
+  grid-area: 4/5/7/9;
+  background-image: url("../img/iced-coffee-5.jpg");
+}
+.box .grid .i4 {
+  grid-area: 7/1/9/9;
+  background-image: url("../img/iced-coffee-6.jpg");
 }/*# sourceMappingURL=style.css.map */
