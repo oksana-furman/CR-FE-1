@@ -42,6 +42,9 @@ $orange: rgb(251, 133, 0);
 .box{
 // height: 80rem;
 padding: 3rem;
+.par-outer{
+    margin: 2rem;
+}
 .item{
     margin: auto;
 }
@@ -66,7 +69,6 @@ padding: 3rem;
     margin: 1rem;
     padding: 0.5rem;
     background-color: white;
-    // color: white;
     border-radius: 3px;
     border: 2px solid $bright_blue;
 }
@@ -87,20 +89,40 @@ padding: 3rem;
                 align-items: center;
                
                 .gridBtn{
-                    visibility: hidden;
+                    // visibility: hidden;
+                    height: 100%;
+                    width: 100%;
+                    border: none;
+                    background-color: rgba(249, 249, 249, 0.0);
+                    span{
+                        visibility: hidden;
+                    }
+                }
+                .gridBtn:hover{
+                    height: fit-content;
+                    width: fit-content;
                     margin: 1rem;
                     padding: 0.5rem;
                     background-color: rgba(249, 249, 249, 0.5);
+                    border: 2px solid black;
                     border-radius: 3px;
+                    
+                }
+                .gridBtn:hover > span{
+                    visibility: visible;
                 }
         }
-        .gridItem:hover{
-            transform: scale(1.05);
-            transition: width 1s, height 1s, transform 1s;
-        }
-        .gridItem:hover > .gridBtn{
-            visibility: visible;
-        }
+
+        //this works, but modal doesn't open properly. it keeps blinking.
+
+        // .gridItem:hover{
+        //     transform: scale(1.05);
+        //     transition: width 1s, height 1s, transform 1s;
+        // }
+
+        // .gridItem:hover > .gridBtn{
+        //     visibility: visible;
+        // }
         .bg-image{
             background-size: cover;
             background-repeat: no-repeat;
@@ -129,14 +151,4 @@ footer{
     color: white;
     padding: 2rem;
 }
-
-@media screen and (max-width: 576px) {
-    .box{
-        // display: flex;
-        display: -webkit-flex;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-        // flex-direction: column;
-        // padding: 5px;
-    }
-}
+@import "media.scss";
